@@ -10,8 +10,8 @@ public class CriaConta {
 		System.out.println(contaDoPaulo.saldo); //imprime;
 		Conta contaDaMarcela = new Conta();
 		contaDaMarcela.deposita(1000);
-		contaDaMarcela.transfere(300.0, contaDoPaulo);
-		System.out.println(contaDaMarcela.saldo);
+		contaDaMarcela.transfere(300.0, contaDoPaulo); //Marcela transfere 300.0 para o Paulo;
+		System.out.println("A conta da Marcela agora possui: " + contaDaMarcela.saldo);
 		System.out.println("agora a conta do Paulo possui:" + contaDoPaulo.saldo);
 		
 		
