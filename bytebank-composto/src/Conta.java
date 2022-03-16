@@ -1,31 +1,61 @@
 
-
 public class Conta {
-	int numero;
-	double saldo;
-	int agencia;
-	Cliente titular;
-	//metodos;
-	public void deposita (double valor) {
+	private int numero;
+	private double saldo;
+	private int agencia;
+	private Cliente titular;
+
+	// metodos;
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
+	public Cliente getTitular() {
+		return titular;
+	}
+
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	public void deposita(double valor) {
 		saldo = saldo + valor;
- 	}
+	}
 	
 	public boolean saca(double valor) {
-		if (this.saldo>= valor) {
+		if (this.saldo >= valor) {
 			this.saldo = this.saldo - valor;
 			return true;
 		} else {
 			return false;
 		}
 	}
-	
+
 	public boolean transfere(double valor, Conta destino) {
 		if (this.saldo >= valor) {
 			this.saldo -= valor;
-			destino.deposita(valor); 
+			destino.deposita(valor);
 			return true;
 		}
 		return false;
 	}
-	
+
 }
