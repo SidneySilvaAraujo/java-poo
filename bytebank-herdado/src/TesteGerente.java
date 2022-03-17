@@ -5,7 +5,7 @@ public class TesteGerente {
 		g1.setNome("Sidney Araujo");
 		g1.setCpf("777.777.777-77");
 		g1.setSalario(20000.0);
-		System.out.println("Gerente: " + g1.getNome() + " salário: " + g1.getSalario() + " cpf: " + g1.getCpf());
+		System.out.println("Gerente: " + g1.getNome() + " salário: " + g1.getSalario() + " cpf: " + g1.getCpf() + " bonificação: " + g1.getBonificacao());
 		g1.setCenha(2022);
 		boolean altenticou = g1.autentica(2022); 
 		System.out.println(altenticou);

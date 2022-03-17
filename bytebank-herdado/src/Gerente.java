@@ -12,8 +12,8 @@ public class Gerente extends Funcionario {
 		this.senha = cenha;
 	}
 
-	/*public double getBonificacao() {
-		return this.salario;
-	}*/
+	public double getBonificacao() {
+		return super.getBonificacao() + super.getSalario();
+	}
 	
 }
