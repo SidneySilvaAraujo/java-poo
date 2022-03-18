@@ -7,10 +7,13 @@ public class TesteReferencias {
 		f.setSalario(2000.0);
 		EditorVideo e = new EditorVideo();
 		e.setSalario(3000.0);
+		Designer d = new Designer();
+	d.setSalario(4000.0);
 		ControleBonificacao controle = new ControleBonificacao();
 		controle.registra(g1);
 		controle.registra(f);
 		controle.registra(e);
+		controle.registra(d);
 		System.out.println(controle.getSoma());
 	}
 }
