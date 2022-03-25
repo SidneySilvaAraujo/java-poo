@@ -1,7 +1,7 @@
 
 public class SistemaInterno {
 
-	private int senha = 2222;
+	private int senha = 7777;
 
 	public void autentica(Autenticavel fa) {
 
