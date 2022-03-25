@@ -1,15 +1,10 @@
 
-//essa classe não pode ser instanciada, porquê é abstrata;
-
 public abstract class Funcionario {
 	private String nome;
 	private String cpf;
 	private double salario;
-	public Funcionario() {
-		
-	}
-	//método abstrato;
-	public abstract double getBonificacao(); 
+	public abstract double getBonificacao();
+	
 	public String getNome() {
 		return nome;
 	}
@@ -29,4 +24,7 @@ public abstract class Funcionario {
 		this.salario = salario;
 	}
 	
+	
+	
+
 }
