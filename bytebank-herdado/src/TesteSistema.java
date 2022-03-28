@@ -6,7 +6,7 @@ public class TesteSistema {
 		g.setSenha(7777);
 		
 		Administrador adm = new Administrador();
-		adm.setSenha(2222);
+		adm.setSenha(7777);
 		
 		Cliente cliente = new Cliente();
 		cliente.setSenha(7777);
